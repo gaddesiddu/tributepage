@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 16px; /* Set a base font size for better scalability */
+}
+
+.container {
+  background-color: #e5e5fd;
+  min-height: 100vh;
+  border: 10px solid #1d1e4c;
+}
+
+.content {
+  max-width: 90%; /* Use a percentage for better responsiveness */
+  margin: 0 auto;
+}
+
+.top_section {
+  margin-top: 5vw; /* Use viewport units for margin */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center; /* Center align items on smaller screens */
+  text-align: center; /* Center align text */
+}
+
+.top_section h1 {
+  font-size: 5vw; /* Use viewport units for font size */
+  font-weight: bold;
+  color: #1d1e4c;
+  text-transform: uppercase;
+  margin-bottom: 1vw; /* Use viewport units for margin */
+}
+
+.top_section h4 {
+  font-size: 2.5vw; /* Use viewport units for font size */
+}
+
+.image_container {
+  border-radius: 50%; /* Use 50% for a perfect circle */
+  overflow: hidden;
+}
+
+.image_container img {
+  width: 100%; /* Make the image responsive within its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.about_section {
+  margin-top: 3vw; /* Use viewport units for margin */
+}
+
+.about_section h2 {
+  font-size: 7vw; /* Use viewport units for font size */
+  font-weight: 400;
+  margin-bottom: 2vw; /* Use viewport units for margin */
+}
+
+.about_section p {
+  font-size: 2vw; /* Use viewport units for font size */
+  line-height: 1.5; /* Use unitless line height for better responsiveness */
+  letter-spacing: 0.1em; /* Use relative units for letter spacing */
+  text-align: justify;
+}
+
+.biography_section {
+  margin: 5vw 0;
+}
+
+.biography_section h3 {
+  margin-bottom: 2vw; /* Use viewport units for margin */
+}
+
+.biography_section ul {
+  margin-left: 5vw; /* Use viewport units for margin */
+}
+
+.biography_section li {
+  margin-bottom: 1.5vw; /* Use viewport units for margin */
+}
+
+footer {
+  margin: 5vw 0;
+}
+
+footer h4 {
+  text-align: end;
+}
+
+footer p {
+  text-align: left;
+}
+
+/* Media Queries for Responsive Design */
+@media screen and (min-width: 768px) {
+  .top_section {
+      flex-direction: row;
+      align-items: flex-end;
+      text-align: start;
+  }
+
+  .top_section h1,
+  .top_section h4 {
+      font-size: 2.5vw;
+  }
+
+  .about_section h2 {
+      font-size: 3vw;
+  }
+
+  .about_section p {
+      font-size: 1.2vw;
+  }
+}
